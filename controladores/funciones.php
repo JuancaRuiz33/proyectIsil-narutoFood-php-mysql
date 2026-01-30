@@ -304,13 +304,13 @@ function enviarCorreo($datos)
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'ruizjuanca2001@gmail.com';
-        $mail->Password   = 'holmamalmdzuraif';
+        $mail->Username   = 'user@gmail.com'; //colocoar correo electronico
+        $mail->Password   = '455tgrgfd-code'; //codigo gmail de verificacion
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // Remitente y destinatario
-        $mail->setFrom('ruizjuanca2001@gmail.com', 'Juan Ruiz Lazo');
+        $mail->setFrom('user@gmail.com', 'usuario'); //email y nombre del usuario a enviar
         $mail->addAddress($correo, $nombreCompleto);
 
         // Contenido
@@ -350,3 +350,4 @@ function enviarCorreo($datos)
         echo '</pre>';
     }
 }
+
